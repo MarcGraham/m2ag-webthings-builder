@@ -1,8 +1,8 @@
 #!/bin/bash
 #TODO: add prompt if no certs -- continue as non-ssl
 #TODO: check for .m2ag-labs/secrets
-echo "m2ag.labs thing installer beta 2"
-echo "copyright 2021 https://m2aglabs.com"
+echo "m2ag.labs thing installer beta 3"
+echo "copyright 2023 https://marcstechart.com"
 
 if [ ! -f "$HOME/server.crt" ] || [ ! -f "$HOME/server.key" ];
 then
@@ -18,8 +18,8 @@ echo 'install some tools'
 sudo apt install mc git i2c-tools python3-pip python3-gpiozero python3-pigpio python3-venv apache2-utils  -y
 
 echo 'install services'
-git clone https://github.com/m2ag-labs/m2ag-webthings-builder.git "$HOME/m2ag-labs"
-git clone https://github.com/m2ag-labs/m2ag-webthings-client.git "$HOME/m2ag-labs/client"
+git clone https://github.com/MarcGraham/m2ag-webthings-builder.git "$HOME/m2ag-labs"
+git clone https://github.com/MarcGraham/m2ag-webthings-client.git "$HOME/m2ag-labs/client"
 
 
 mkdir "$HOME"/m2ag-labs/config
